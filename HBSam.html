@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBSamsei</title>
+    <style type="text/css">
+        .wdp-comment-text img {max-width: 100% !important; }
+        blockquote {color: brown; font-size: 36px;}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="text-align: center; padding: 10px;">
+        <!-- href="https://media.discordapp.net/attachments/1299917064198164491/1299981515886690364/WhatsApp_Video_2024-10-25_at_23.50.13.mp4?ex=671f2da1&is=671ddc21&hm=1b334f39874ae97c7797fd3e3313e7871e62385f7e365f317dcf148f076cde09&" target="_blank" id="gif-link" -->
+        <a 
+        href="sam.gif" target="_blank" id="gif-link"
+        > 
+        <!-- href="https://s3.ezgif.com/tmp/ezgif-3-e72a16951d.gif" target="_blank" id="gif-link" -->
+            <img src="https://i.pinimg.com/originals/ca/97/bd/ca97bde328433c2497b154afdee5f8d7.gif" alt="animated heart" />
+        </a>
+        <h1 style="font-size: 45px; color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);"><em>To : My Samsei</em></h1> 
+        <h2 style="font-size: 65px; color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);"><em>Happy Birthday</em></h2>
+        
+        <!-- 音频播放器 -->
+        <audio id="birthday-audio" muted>
+            <source src="https://audio.jukehost.co.uk/edfYZxUgRCDU4JmV0zX248F7bRe1GVLk" type="audio/mp3">
+            您的浏览器不支持音频元素。
+        </audio>
+    </header>
+
+    <script>
+        // 获取音频元素和GIF链接
+        const audio = document.getElementById('birthday-audio');
+        const gifLink = document.getElementById('gif-link');
+
+        // 添加点击事件
+        gifLink.addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止链接的默认行为
+            audio.muted = false; // 取消静音
+            audio.play(); // 播放音频
+            window.open(gifLink.href); // 打开GIF链接
+        });
+    </script>
+</body>
+</html>

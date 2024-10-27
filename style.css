@@ -1,0 +1,12 @@
+{padding:0;
+margin:0;}
+
+header,section,footer
+{background-color: rgb(211, 175, 175);}
+{border:5px solid;dashed;}
+{padding:30px 30px}
+button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
